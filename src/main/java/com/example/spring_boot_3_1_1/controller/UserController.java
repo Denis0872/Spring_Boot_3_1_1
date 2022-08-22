@@ -21,26 +21,26 @@ public class UserController {
 
 
     @GetMapping("edit/{id}")
-    public String update(@PathVariable("id") int id, Model model) {
+    public String updateUserGet(@PathVariable("id") int id, Model model) {
         model.addAttribute(userService.getUserById(id));
         return "edit";
     }
 
 
     @PatchMapping("edit")
-    public String update2( User user){
+    public String updateUserPatch( User user){
         this.userService.updateUser(user);
         return "redirect:/";
     }
 
 
     @GetMapping("/create")
-    public String addUser(User user) {
+    public String addUserGet(User user) {
         return "create";
     }
 
     @PostMapping("/create")
-    public String addUser2(@ModelAttribute("user") User user) {
+    public String addUserPost(@ModelAttribute("user") User user) {
         userService.addUser(user);
         return "redirect:/";
     }

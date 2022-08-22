@@ -1,7 +1,6 @@
-package com.example.spring_boot_3_1_1.DAO;
+package com.example.spring_boot_3_1_1.dao;
 
 import com.example.spring_boot_3_1_1.model.User;
-import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 

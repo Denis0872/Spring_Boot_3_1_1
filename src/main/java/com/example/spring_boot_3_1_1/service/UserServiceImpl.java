@@ -1,6 +1,6 @@
 package com.example.spring_boot_3_1_1.service;
 
-import com.example.spring_boot_3_1_1.DAO.UserDao;
+import com.example.spring_boot_3_1_1.dao.UserDao;
 import com.example.spring_boot_3_1_1.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
